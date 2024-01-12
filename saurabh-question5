@@ -1,0 +1,27 @@
+
+Q5. Difference between --force push and --force-with-lease, You have to show the use of both, also
+ you have to show in what scenario --force-with-lease is used?
+
+-> --force and --force-with-lease are both opiton are used with git push when you need
+     to forcefully update the code on remote repo 
+
+    -- force : 
+                when we used --force with git push it means you are telling to git to ignore what 
+       is on the remote server and just push your changes even if it means overwriting or erasing 
+       what is already there
+
+    command :
+                git push --force origin branch_name
+
+
+    
+    --force-with-lease :
+                 when we use --force-with-lease it means we tell git I want to push my code but
+         only if nobody else push anything new
+         
+      command :
+                   git push --force-with-lease origin branch_name
+
+      Scenario :
+             1) You and  your teammate are worling on the same branch
+             2) If someone else pushed chnages your push is rejected it prevent the data loss
