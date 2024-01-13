@@ -1,13 +1,20 @@
-How to set multiple remote repositories for the same project? Explain the use case. you should have a working demo of it.
+How to set multiple remote repositories for the same project? Explain the use case.
+ you should have a working demo of it.
 -> command : git push origin_name branch_name
 
-   In this we have check the origin list  by git remote -v
-  1) create multiple repository
+   steps : 
+        1) create multiple repository
 
-  2) specify each origin with different name e.g first_origin , second_origin and so on
+        2) specify each origin with different name e.g 
+           git push public_origin link
+           git push private_origin link
 	
-  3) to push use : git oush origin_name branch_name
+        3) to push : git push origin_name branch_name
 
-  and by this we can create the many repo as we want
+         and by this we can create the many repo as we want
 	
 
+ Use Case : 
+     If we have to working wit project having many collaboratino with multiple team then we have
+    central repo of your own and then there is colloborative repo also. In this case you might 
+    have to set up the mulitple repo
