@@ -12,3 +12,8 @@ Q6. How to un stage changes from the staged area. write command for it.
               git reset .
  
      
+   
+    If we have to do the number of changes then
+    command : 
+             git reset HEAD^n 
+             where n is the number of changes
