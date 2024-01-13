@@ -10,5 +10,10 @@ git Q3. How to combine two commits into one commit? For Example, you have 4 diff
    3) then we have to do the squash got that we use
 	git rebase -i HEAD~4 
 	from above command we can sqaush the recent four commit
-   4) then we not remove the comment of the selective commtit 
+   4) then all commit appear as pick then if we have to combine c2 and c3 them instead of pick
+      front of c3 we have to write the 's'
+   5) then we save the file 
+   6) after this another terminal will open
+   7) after we again save the file
+   4) then we  remove the comment of the selective commtit 
    5) By saving the file  we can combine the two or many commit
